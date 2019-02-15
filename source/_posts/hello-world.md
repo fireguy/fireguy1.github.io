@@ -1,5 +1,9 @@
 ---
 title: Hello World
+categories: basic
+tags: 
+  - hexo
+  - hexoeditor
 ---
 Welcome to fireguy's blog, and this is my 1st blog.
 
