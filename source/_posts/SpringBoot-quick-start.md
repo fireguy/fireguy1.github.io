@@ -1,5 +1,5 @@
 ---
-title: Spring Boot quick start
+title: Spring Boot快速入门
 date: 2019-02-20 00:11:34
 tags:
   - Spring Boot
@@ -7,7 +7,7 @@ categories:
   - backend
 ---
 
-# Spring Boot快速入门(1)
+# 初识Spring Boot
 ## 概述
 Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 
@@ -26,6 +26,10 @@ Spring Boot默认使用tomcat作为服务器，使用logback提供日志记录�
     - Automatically configure Spring and 3rd party libraries whenever possible
     - Provide production-ready features such as metrics, health checks and externalized configuration
     - Absolutely no code generation and no requirement for XML configuration
+
+# Spring Boot 实践
+## Hello World
+## 构建RESTful Web Service
 
 # 参考
 - [Spring Boot 源码-github](https://github.com/spring-projects/spring-boot)
