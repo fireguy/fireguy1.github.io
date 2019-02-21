@@ -96,25 +96,31 @@
 
 
 
-  <meta name="description" content="方案本文使用的是A方案。  A. Hexo + Github page B. Jekyll + Github page  Hexo使用技巧Hexo部署免输密码使用如下配置，可以在进行hexo deploy或hexo d部署时免输密码，前提已成功配置SSH Key。1234deploy:  type: git  repo: git@github.com:fireguy/fireguy.github.">
-<meta name="keywords" content="hexo,hexoeditor,github,gitpages,hexo-next-theme">
+  <meta name="description" content="Alibaba Java代码规约扫描插件2017年10月14日杭州云栖大会，Java代码规约扫描插件全球首发仪式正式启动，规范正式以插件形式公开走向业界，引领Java语言的规范之路。 源码：alibaba/p3c 相关文档或书籍：  中文版: 阿里巴巴Java开发手册 English Version: Alibaba Java Coding Guidelines 《阿里巴巴Java开发手册》书籍版">
+<meta name="keywords" content="eclipse,intelliJ idea,plugin,Alibaba,sonar,pmd">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于Hexo + Github Page搭建个人博客">
-<meta property="og:url" content="http://fushaolin.top/20190220/Hexo/index.html">
+<meta property="og:title" content="alibaba-p3c-plugin-setup">
+<meta property="og:url" content="http://fushaolin.top/20190221/alibaba-p3c-plugin-setup/index.html">
 <meta property="og:site_name" content="fireguy&#39;s blog">
-<meta property="og:description" content="方案本文使用的是A方案。  A. Hexo + Github page B. Jekyll + Github page  Hexo使用技巧Hexo部署免输密码使用如下配置，可以在进行hexo deploy或hexo d部署时免输密码，前提已成功配置SSH Key。1234deploy:  type: git  repo: git@github.com:fireguy/fireguy.github.">
+<meta property="og:description" content="Alibaba Java代码规约扫描插件2017年10月14日杭州云栖大会，Java代码规约扫描插件全球首发仪式正式启动，规范正式以插件形式公开走向业界，引领Java语言的规范之路。 源码：alibaba/p3c 相关文档或书籍：  中文版: 阿里巴巴Java开发手册 English Version: Alibaba Java Coding Guidelines 《阿里巴巴Java开发手册》书籍版">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-19T17:10:57.199Z">
+<meta property="og:image" content="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/install-add-repository.png">
+<meta property="og:image" content="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/security-warning.png">
+<meta property="og:image" content="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/software-update-restart.png">
+<meta property="og:image" content="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/ecipse-use-p3c-plugin.png">
+<meta property="og:image" content="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/idea-p3c-plugin-setup.png">
+<meta property="og:updated_time" content="2019-02-21T15:17:00.913Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于Hexo + Github Page搭建个人博客">
-<meta name="twitter:description" content="方案本文使用的是A方案。  A. Hexo + Github page B. Jekyll + Github page  Hexo使用技巧Hexo部署免输密码使用如下配置，可以在进行hexo deploy或hexo d部署时免输密码，前提已成功配置SSH Key。1234deploy:  type: git  repo: git@github.com:fireguy/fireguy.github.">
+<meta name="twitter:title" content="alibaba-p3c-plugin-setup">
+<meta name="twitter:description" content="Alibaba Java代码规约扫描插件2017年10月14日杭州云栖大会，Java代码规约扫描插件全球首发仪式正式启动，规范正式以插件形式公开走向业界，引领Java语言的规范之路。 源码：alibaba/p3c 相关文档或书籍：  中文版: 阿里巴巴Java开发手册 English Version: Alibaba Java Coding Guidelines 《阿里巴巴Java开发手册》书籍版">
+<meta name="twitter:image" content="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/install-add-repository.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://fushaolin.top/20190220/Hexo/">
+  <link rel="canonical" href="http://fushaolin.top/20190221/alibaba-p3c-plugin-setup/">
 
 
 
@@ -124,7 +130,7 @@
   };
 </script>
 
-  <title>基于Hexo + Github Page搭建个人博客 | fireguy's blog</title>
+  <title>alibaba-p3c-plugin-setup | fireguy's blog</title>
   
 
 
@@ -360,7 +366,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://fushaolin.top/20190220/Hexo/">
+    <link itemprop="mainEntityOfPage" href="http://fushaolin.top/20190221/alibaba-p3c-plugin-setup/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fireguy">
@@ -377,7 +383,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">基于Hexo + Github Page搭建个人博客
+          <h1 class="post-title" itemprop="name headline">alibaba-p3c-plugin-setup
 
               
             
@@ -403,7 +409,7 @@
                 
               
 
-              <time title="创建时间：2019-02-20 00:54:04 / 修改时间：01:10:57" itemprop="dateCreated datePublished" datetime="2019-02-20T00:54:04+08:00">2019-02-20</time>
+              <time title="创建时间：2019-02-21 22:12:41 / 修改时间：23:17:00" itemprop="dateCreated datePublished" datetime="2019-02-21T22:12:41+08:00">2019-02-21</time>
             
 
             
@@ -414,24 +420,6 @@
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/basic/" itemprop="url" rel="index"><span itemprop="name">basic</span></a></span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -440,7 +428,7 @@
 
           
           
-            <span id="/20190220/Hexo/" class="leancloud_visitors" data-flag-title="基于Hexo + Github Page搭建个人博客">
+            <span id="/20190221/alibaba-p3c-plugin-setup/" class="leancloud_visitors" data-flag-title="alibaba-p3c-plugin-setup">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -471,19 +459,38 @@
       
 
       
-        <h1 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h1><pre><code>本文使用的是A方案。
-</code></pre><ul>
-<li>A. Hexo + Github page</li>
-<li>B. Jekyll + Github page</li>
+        <h1 id="Alibaba-Java代码规约扫描插件"><a href="#Alibaba-Java代码规约扫描插件" class="headerlink" title="Alibaba Java代码规约扫描插件"></a>Alibaba Java代码规约扫描插件</h1><p>2017年10月14日杭州云栖大会，Java代码规约扫描插件全球首发仪式正式启动，规范正式以插件形式公开走向业界，引领Java语言的规范之路。</p>
+<p>源码：<a href="https://github.com/alibaba/p3c" target="_blank" rel="noopener">alibaba/p3c</a></p>
+<p>相关文档或书籍：</p>
+<ul>
+<li>中文版: <em><a href="https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf" target="_blank" rel="noopener">阿里巴巴Java开发手册</a></em></li>
+<li>English Version: <em><a href="https://alibaba.github.io/Alibaba-Java-Coding-Guidelines" target="_blank" rel="noopener">Alibaba Java Coding Guidelines</a></em></li>
+<li>《阿里巴巴Java开发手册》书籍版天猫官方店: <em><a href="https://detail.tmall.com/item.htm?spm=a1z2e.8325951.feedDetail.4.3315431gklIXe&amp;id=562626792765&amp;ns=1&amp;abbucket=14" target="_blank" rel="noopener">阿里巴巴Java开发手册最新版</a></em></li>
+<li>《码出高效》书籍版天猫官方店: <em><a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.40.7dee7d6bwpO82U&amp;id=575107529181&amp;ns=1&amp;abbucket=20" target="_blank" rel="noopener">码出高效：Java开发手册</a></em></li>
 </ul>
-<h1 id="Hexo使用技巧"><a href="#Hexo使用技巧" class="headerlink" title="Hexo使用技巧"></a>Hexo使用技巧</h1><h2 id="Hexo部署免输密码"><a href="#Hexo部署免输密码" class="headerlink" title="Hexo部署免输密码"></a>Hexo部署免输密码</h2><p>使用如下配置，可以在进行hexo deploy或hexo d部署时免输密码，前提已成功配置SSH Key。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:fireguy/fireguy.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<h2 id="使用HexoEditor编辑器提高效率"><a href="#使用HexoEditor编辑器提高效率" class="headerlink" title="使用ＨexoEditor编辑器提高效率"></a>使用ＨexoEditor编辑器提高效率</h2><p>HexoEditor使用请参考<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">Github/HexoEditor</a> </p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
-<li><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></li>
-<li><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Hexo theme:next</a><ul>
-<li><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">theme-next guide</a></li>
+<h1 id="安装Eclipse插件"><a href="#安装Eclipse插件" class="headerlink" title="安装Eclipse插件"></a>安装Eclipse插件</h1><h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><ul>
+<li>Eclipse Juno+</li>
+<li>maven3.+</li>
+<li>JDK 1.7+</li>
 </ul>
-</li>
+<h2 id="离线安装"><a href="#离线安装" class="headerlink" title="离线安装"></a>离线安装</h2><ul>
+<li>离线插件：<a href="https://p3c.alibaba.com/plugin/eclipse/update/plugin.zip" target="_blank" rel="noopener">点我获取</a></li>
+<li>安装步骤：略</li>
+</ul>
+<h2 id="在线安装"><a href="#在线安装" class="headerlink" title="在线安装"></a>在线安装</h2><p>启动Eclispe，依次选择菜单的Help &gt;&gt; Install New Software,进入Install对话框。如图所示，点击【Add…】，并在弹出的Add Repository对话框中分别输入Name和插件URL，点击【Add】。然后根据提示进行安装。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Name: alibaba-p3c #自定义</span><br><span class="line">Location: https://p3c.alibaba.com/plugin/eclipse/update</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/install-add-repository.png" alt=""><br>注意安装完成后可能弹Security Warning，点击【Install anyway】即可。<br><img src="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/security-warning.png" alt=""><br>安装完成后，会提示重启Eclipse, 插件会在下次启动后生效。<br><img src="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/software-update-restart.png" alt=""></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><img src="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/ecipse-use-p3c-plugin.png" alt=""></p>
+<h1 id="安装IntelliJ-IDEA插件"><a href="#安装IntelliJ-IDEA插件" class="headerlink" title="安装IntelliJ IDEA插件"></a>安装IntelliJ IDEA插件</h1><h2 id="要求-1"><a href="#要求-1" class="headerlink" title="要求"></a>要求</h2><ul>
+<li>Project JDK: 1.7+</li>
+<li>Gradle: 3.0+（Require JDK1.8+ for gradle）</li>
+</ul>
+<h2 id="离线安装-1"><a href="#离线安装-1" class="headerlink" title="离线安装"></a>离线安装</h2><ul>
+<li>离线插件：<a href="https://plugins.jetbrains.com/plugin/10046-alibaba-java-coding-guidelines" target="_blank" rel="noopener">点我前往下载</a></li>
+<li>安装步骤：略</li>
+</ul>
+<h2 id="在线安装-1"><a href="#在线安装-1" class="headerlink" title="在线安装"></a>在线安装</h2><p>启动IntelliJ IDEA，依次选择Settings &gt;&gt; Plugins<br>通过关键字”alibaba”搜索plugin,找到’Alibaba Java Coding Guidelines’ plugin 安装<br><img src="http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/idea-p3c-plugin-setup.png" alt=""><br>重启IntelliJ IDEA使插件生效。</p>
+<h2 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://github.com/alibaba/p3c" target="_blank" rel="noopener">github-alibaba/p3c</a></li>
 </ul>
 
       
@@ -508,15 +515,17 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/eclipse/" rel="tag"># eclipse</a>
           
-            <a href="/tags/hexoeditor/" rel="tag"># hexoeditor</a>
+            <a href="/tags/intelliJ-idea/" rel="tag"># intelliJ idea</a>
           
-            <a href="/tags/github/" rel="tag"># github</a>
+            <a href="/tags/plugin/" rel="tag"># plugin</a>
           
-            <a href="/tags/gitpages/" rel="tag"># gitpages</a>
+            <a href="/tags/Alibaba/" rel="tag"># Alibaba</a>
           
-            <a href="/tags/hexo-next-theme/" rel="tag"># hexo-next-theme</a>
+            <a href="/tags/sonar/" rel="tag"># sonar</a>
+          
+            <a href="/tags/pmd/" rel="tag"># pmd</a>
           
         </div>
       
@@ -529,8 +538,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/20190220/SpringBoot-quick-start/" rel="next" title="Spring Boot快速入门">
-                <i class="fa fa-chevron-left"></i> Spring Boot快速入门
+              <a href="/20190220/Hexo/" rel="next" title="基于Hexo + Github Page搭建个人博客">
+                <i class="fa fa-chevron-left"></i> 基于Hexo + Github Page搭建个人博客
               </a>
             
           </div>
@@ -538,10 +547,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/20190221/alibaba-p3c-plugin-setup/" rel="prev" title="alibaba-p3c-plugin-setup">
-                alibaba-p3c-plugin-setup <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -740,7 +745,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#方案"><span class="nav-number">1.</span> <span class="nav-text">方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo使用技巧"><span class="nav-number">2.</span> <span class="nav-text">Hexo使用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo部署免输密码"><span class="nav-number">2.1.</span> <span class="nav-text">Hexo部署免输密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用HexoEditor编辑器提高效率"><span class="nav-number">2.2.</span> <span class="nav-text">使用ＨexoEditor编辑器提高效率</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Alibaba-Java代码规约扫描插件"><span class="nav-number">1.</span> <span class="nav-text">Alibaba Java代码规约扫描插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Eclipse插件"><span class="nav-number">2.</span> <span class="nav-text">安装Eclipse插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#要求"><span class="nav-number">2.1.</span> <span class="nav-text">要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离线安装"><span class="nav-number">2.2.</span> <span class="nav-text">离线安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在线安装"><span class="nav-number">2.3.</span> <span class="nav-text">在线安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">2.4.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装IntelliJ-IDEA插件"><span class="nav-number">3.</span> <span class="nav-text">安装IntelliJ IDEA插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#要求-1"><span class="nav-number">3.1.</span> <span class="nav-text">要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离线安装-1"><span class="nav-number">3.2.</span> <span class="nav-text">离线安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在线安装-1"><span class="nav-number">3.3.</span> <span class="nav-text">在线安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件使用"><span class="nav-number">3.4.</span> <span class="nav-text">插件使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.5.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
             
 
           </div>
