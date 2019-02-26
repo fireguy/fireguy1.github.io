@@ -1,5 +1,5 @@
 ---
-title: alibaba-p3c-plugin-setup
+title: Alibaba Java代码规约扫描插件安装与使用
 date: 2019-02-21 22:12:41
 tags:
   - eclipse
@@ -39,13 +39,13 @@ categries:
 Name: alibaba-p3c #自定义
 Location: https://p3c.alibaba.com/plugin/eclipse/update
 ```
-![](http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/install-add-repository.png)
+![](/alibaba-p3c-plugin-setup/install-add-repository.png)
 注意安装完成后可能弹Security Warning，点击【Install anyway】即可。
-![](http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/security-warning.png)
+![](/alibaba-p3c-plugin-setup/security-warning.png)
 安装完成后，会提示重启Eclipse, 插件会在下次启动后生效。
-![](http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/software-update-restart.png)
+![](/alibaba-p3c-plugin-setup/software-update-restart.png)
 ## 使用
-![](http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/ecipse-use-p3c-plugin.png)
+![](/alibaba-p3c-plugin-setup/ecipse-use-p3c-plugin.png)
 # 安装IntelliJ IDEA插件
 ## 要求
   - Project JDK: 1.7+
@@ -58,7 +58,7 @@ Location: https://p3c.alibaba.com/plugin/eclipse/update
 ## 在线安装
 启动IntelliJ IDEA，依次选择Settings >> Plugins
 通过关键字"alibaba"搜索plugin,找到'Alibaba Java Coding Guidelines' plugin 安装
-![](http://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/alibaba-p3c-plugin-setup/idea-p3c-plugin-setup.png)
+![](/alibaba-p3c-plugin-setup/idea-p3c-plugin-setup.png)
 重启IntelliJ IDEA使插件生效。
 ## 插件使用
 
