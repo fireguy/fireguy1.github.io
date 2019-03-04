@@ -22,4 +22,4 @@ http://cucumber.github.com/cucumber-eclipse/update-site
 安装完成后，会提示重启Eclipse, 插件会在下次启动后生效。
 ![](../upload/Cucumber-eclipe-plugin/software-update-restart.png)
 # 安装后
-![](/Cucumber-eclipe-plugin/install-cucumber-4.png)
+![](../upload/Cucumber-eclipe-plugin/install-cucumber-4.png)
