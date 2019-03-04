@@ -1,10 +1,14 @@
---- 
+---
 title: Eclipse Cucumber插件安装
 date: 2019-02-26 22:14:28
 tags:
-  - cucumber
   - eclipse
+  - cucumber
+  - plugin
+categries:
+  - baisic
 ---
+
 # Eclipse Cucumber插件安装
 启动Eclispe，依次选择菜单的Help >> Install New Software,进入Install对话框。
 ```
