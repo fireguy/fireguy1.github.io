@@ -247,7 +247,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">13</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">15</span></a>
 
   </li>
         
@@ -285,7 +285,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">7</span></a>
 
   </li>
         
@@ -340,6 +340,440 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://fushaolin.top/20190318/git/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fireguy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fireguy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/20190318/git/" class="post-title-link" itemprop="url">git</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-18 20:12:05 / 修改时间：22:18:20" itemprop="dateCreated datePublished" datetime="2019-03-18T20:12:05+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/20190318/git/" class="leancloud_visitors" data-flag-title="git">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h2 id="Git介绍"><a href="#Git介绍" class="headerlink" title="Git介绍"></a>Git介绍</h2><ul>
+<li>Git是分布式版本控制系统</li>
+<li>集中式VS分布式<ul>
+<li>集中式版本控制系统，版本库集中存放在中央服务器，必须要联网才能工作,没有历史版本库。</li>
+<li>分布式版本控制系统，版本控制系统没有“中央服务器”，每个人电脑上都是一个完整的版本库。</li>
+<li>分布式系统优势：安全性更高，不需要联网，如果中央服务器故障，任何其他一个开发人员的本地都有最新的带有历史记录的版本库。</li>
+</ul>
+</li>
+<li>主要区别在于历史版本库的存放，集中式系统历史版本只存在于中央服务器，而分布式控制系统中每个本地库都有历史记录存放。<h2 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h2><h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><ul>
+<li><a href="https://github.com/git/git" target="_blank" rel="noopener">Github-Git</a></li>
+<li><a href="https://git-scm.com/download" target="_blank" rel="noopener">Git下载地址</a><br><img src="/git/20190318081402340.png" alt=""><h3 id="git-GUI"><a href="#git-GUI" class="headerlink" title="git-GUI"></a>git-GUI</h3><a href="https://git-scm.com/downloads/guis/" target="_blank" rel="noopener">git-GUI Clients</a><br><img src="/git/20190318083343938.png" alt=""></li>
+</ul>
+<h2 id="工作区、暂存区和版本库"><a href="#工作区、暂存区和版本库" class="headerlink" title="工作区、暂存区和版本库"></a>工作区、暂存区和版本库</h2><ul>
+<li>工作区：git init指令执行的目录</li>
+<li>版本库：工作区的隐藏目录.git</li>
+<li>暂存区: 版本库的stage（或index）<br><img src="/git/20190318100549699.png" alt=""></li>
+</ul>
+<p>将文件往版本库里添加时是分两步执行的:</p>
+<ul>
+<li>第一步是用<code>git add</code>把文件添加进去，实际上就是把文件修改添加到暂存区。</li>
+<li>第二步是用<code>git commit</code>提交修改，实际上就是把暂存区的所有内容提交到当前分支。</li>
+</ul>
+<p>Git是如何跟踪修改的，每次修改，如果不用git add到暂存区，那就不会加入到commit中。</p>
+<h2 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h2><h3 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h3><h4 id="git配置"><a href="#git配置" class="headerlink" title="git配置"></a>git配置</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">指令</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">git config –global user.name “Your Name”</td>
+<td style="text-align:left">配置user.name</td>
+</tr>
+<tr>
+<td style="text-align:left">git config –global user.email “<a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a>“</td>
+<td style="text-align:left">配置user.nameuser.email</td>
+</tr>
+<tr>
+<td style="text-align:left">git config –global -l</td>
+<td style="text-align:left">查看配置列表</td>
+</tr>
+<tr>
+<td style="text-align:left">git init</td>
+<td style="text-align:left">在当前目录创建git仓库</td>
+</tr>
+<tr>
+<td style="text-align:left">git add <file></file></td>
+<td style="text-align:left">添加文件到仓库</td>
+</tr>
+<tr>
+<td style="text-align:left">git commit -m <message></message></td>
+<td style="text-align:left">提交</td>
+</tr>
+<tr>
+<td style="text-align:left">git status</td>
+<td style="text-align:left">查看工作区状态</td>
+</tr>
+<tr>
+<td style="text-align:left">git log [–pretty=oneline]</td>
+<td style="text-align:left">查看提交历史</td>
+</tr>
+<tr>
+<td style="text-align:left">git reset –hard HEAD^</td>
+<td style="text-align:left">HEAD指向的版本是当前版本，回到上一版本</td>
+</tr>
+<tr>
+<td style="text-align:left">git reset –hard HEAD^^</td>
+<td style="text-align:left">HEAD指向的版本是当前版本，回退上两个版本</td>
+</tr>
+<tr>
+<td style="text-align:left">git reset –hard HEAD~50</td>
+<td style="text-align:left">HEAD指向的版本是当前版本，回退上指定版本数</td>
+</tr>
+<tr>
+<td style="text-align:left">git reflog</td>
+<td style="text-align:left">查看提交命令历史，可查看提交版本号(commit id/SHA1)</td>
+</tr>
+<tr>
+<td style="text-align:left">git reset –hard <sha1></sha1></td>
+<td style="text-align:left">回到未来指定版本<sha1></sha1></td>
+</tr>
+<tr>
+<td style="text-align:left">git checkout – <file></file></td>
+<td style="text-align:left">丢弃工作区的修改</td>
+</tr>
+<tr>
+<td style="text-align:left">git rm <file></file></td>
+<td style="text-align:left">删除文件，相当于先rm <file>再git add <file></file></file></td>
+</tr>
+<tr>
+<td style="text-align:left">git diff</td>
+<td style="text-align:left">查看文件修改内容</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>git config命令的–global参数，表明这台机器上的所有Git仓库都会使用这个配置，也可以对某个仓库指定不同的用户名和邮箱地址</p>
+</blockquote>
+<h3 id="Git进阶"><a href="#Git进阶" class="headerlink" title="Git进阶"></a>Git进阶</h3><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git-Manual</a> </li>
+<li><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">Git-book:《Pro Git v2》</a></li>
+<li><a href="https://git-scm.com/videos" target="_blank" rel="noopener">Git-video</a></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰-Git教程</a></li>
+<li><a href="https://github.com/iuuan/learngit/blob/master/learning-note.md" target="_blank" rel="noopener">Git学习笔记</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://fushaolin.top/20190313/jenkins-setup/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fireguy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="fireguy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/20190313/jenkins-setup/" class="post-title-link" itemprop="url">jenkins setup</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-13 21:27:25" itemprop="dateCreated datePublished" datetime="2019-03-13T21:27:25+08:00">2019-03-13</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-14 00:51:35" itemprop="dateModified" datetime="2019-03-14T00:51:35+08:00">2019-03-14</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/20190313/jenkins-setup/" class="leancloud_visitors" data-flag-title="jenkins setup">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="jenkins"><a href="#jenkins" class="headerlink" title="jenkins"></a>jenkins</h1><h2 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -</span><br><span class="line">sudo sh -c &apos;echo deb http://pkg.jenkins.io/debian-stable binary/ &gt;/etc/apt/sources.list.d/jenkins.list&apos;</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install jenkins</span><br></pre></td></tr></table></figure>
+<p><img src="/jenkins-setup/20190313093123368.png" alt=""><br><img src="/jenkins-setup/20190313093724682.png" alt=""><br><img src="/jenkins-setup/20190314123354141.png" alt=""></p>
+<h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><p><img src="/jenkins-setup/20190314122849087.png" alt=""></p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>将type -p java的输出内容替换/etc/init.d/jenkins文件中的’type -p java’，重新加载，重启jenkins，验证<a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/init.d/jenkins</span><br><span class="line">systemctl daemon-reload</span><br><span class="line">sudo service jenkins start</span><br><span class="line">systemctl status jenkins.service</span><br></pre></td></tr></table></figure></p>
+<p><img src="/jenkins-setup/20190314123042225.png" alt=""><br><img src="/jenkins-setup/20190314123300322.png" alt=""><br><img src="/jenkins-setup/20190314123113162.png" alt=""></p>
+<h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h2><p><img src="/jenkins-setup/20190314124343930.png" alt=""><br><img src="/jenkins-setup/20190314124444015.png" alt=""><br><img src="/jenkins-setup/20190314124457301.png" alt=""><br><img src="/jenkins-setup/20190314124514120.png" alt=""><br><img src="/jenkins-setup/20190314124605716.png" alt=""><br><img src="/jenkins-setup/20190314124638403.png" alt=""><br><img src="/jenkins-setup/20190314124904403.png" alt=""><br><img src="/jenkins-setup/20190314125040336.png" alt=""><br><img src="/jenkins-setup/20190314125055246.png" alt=""><br><img src="/jenkins-setup/20190314125112763.png" alt=""><br><img src="/jenkins-setup/20190314125134075.png" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -418,7 +852,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-04 21:05:09" itemprop="dateModified" datetime="2019-03-04T21:05:09+08:00">2019-03-04</time>
+                <time title="修改时间：2019-03-04 21:17:50" itemprop="dateModified" datetime="2019-03-04T21:17:50+08:00">2019-03-04</time>
               
             
           </span>
@@ -467,7 +901,7 @@
           
             <h1 id="Eclipse-Cucumber插件安装"><a href="#Eclipse-Cucumber插件安装" class="headerlink" title="Eclipse Cucumber插件安装"></a>Eclipse Cucumber插件安装</h1><p>启动Eclispe，依次选择菜单的Help &gt;&gt; Install New Software,进入Install对话框。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://cucumber.github.com/cucumber-eclipse/update-site</span><br></pre></td></tr></table></figure></p>
 <p><img src="../upload/Cucumber-eclipe-plugin/install-cucumber-1.png" alt=""><br><img src="../upload/Cucumber-eclipe-plugin/install-cucumber-2.png" alt=""><br><img src="../upload/Cucumber-eclipe-plugin/install-cucumber-3.png" alt=""><br>注意安装完成后可能弹Security Warning，点击【Install anyway】即可。<br><img src="../upload/Cucumber-eclipe-plugin/security-warning.png" alt=""><br>安装完成后，会提示重启Eclipse, 插件会在下次启动后生效。<br><img src="../upload/Cucumber-eclipe-plugin/software-update-restart.png" alt=""></p>
-<h1 id="安装后"><a href="#安装后" class="headerlink" title="安装后"></a>安装后</h1><p><img src="/Cucumber-eclipe-plugin/install-cucumber-4.png" alt=""></p>
+<h1 id="安装后"><a href="#安装后" class="headerlink" title="安装后"></a>安装后</h1><p><img src="../upload/Cucumber-eclipe-plugin/install-cucumber-4.png" alt=""></p>
 
           
         
@@ -1317,7 +1751,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1381,7 +1815,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
