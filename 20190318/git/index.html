@@ -107,7 +107,7 @@
 <meta property="og:image" content="http://fushaolin.top/git/20190318081402340.png">
 <meta property="og:image" content="http://fushaolin.top/git/20190318083343938.png">
 <meta property="og:image" content="http://fushaolin.top/git/20190318100549699.png">
-<meta property="og:updated_time" content="2019-03-18T14:18:20.907Z">
+<meta property="og:updated_time" content="2019-03-20T15:09:04.562Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git">
 <meta name="twitter:description" content="GitGit介绍 Git是分布式版本控制系统 集中式VS分布式 集中式版本控制系统，版本库集中存放在中央服务器，必须要联网才能工作,没有历史版本库。 分布式版本控制系统，版本控制系统没有“中央服务器”，每个人电脑上都是一个完整的版本库。 分布式系统优势：安全性更高，不需要联网，如果中央服务器故障，任何其他一个开发人员的本地都有最新的带有历史记录的版本库。   主要区别在于历史版本库的存放，集中式系">
@@ -407,12 +407,24 @@
                 
               
 
-              <time title="创建时间：2019-03-18 20:12:05 / 修改时间：22:18:20" itemprop="dateCreated datePublished" datetime="2019-03-18T20:12:05+08:00">2019-03-18</time>
+              <time title="创建时间：2019-03-18 20:12:05" itemprop="dateCreated datePublished" datetime="2019-03-18T20:12:05+08:00">2019-03-18</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-20 23:09:04" itemprop="dateModified" datetime="2019-03-20T23:09:04+08:00">2019-03-20</time>
               
             
           </span>
@@ -525,15 +537,15 @@
 </tr>
 <tr>
 <td style="text-align:left">git reset –hard HEAD^</td>
-<td style="text-align:left">HEAD指向的版本是当前版本，回到上一版本</td>
+<td style="text-align:left">HEAD指向的版本是当前版本，回到上一版本（前提是没有推送到远程库）</td>
 </tr>
 <tr>
 <td style="text-align:left">git reset –hard HEAD^^</td>
-<td style="text-align:left">HEAD指向的版本是当前版本，回退上两个版本</td>
+<td style="text-align:left">HEAD指向的版本是当前版本，回退上两个版本（前提是没有推送到远程库）</td>
 </tr>
 <tr>
 <td style="text-align:left">git reset –hard HEAD~50</td>
-<td style="text-align:left">HEAD指向的版本是当前版本，回退上指定版本数</td>
+<td style="text-align:left">HEAD指向的版本是当前版本，回退上指定版本数（前提是没有推送到远程库）</td>
 </tr>
 <tr>
 <td style="text-align:left">git reflog</td>
@@ -545,7 +557,11 @@
 </tr>
 <tr>
 <td style="text-align:left">git checkout – <file></file></td>
-<td style="text-align:left">丢弃工作区的修改</td>
+<td style="text-align:left">丢弃工作区的修改,让这个文件回到最近一次git commit或git add时的状态</td>
+</tr>
+<tr>
+<td style="text-align:left">git reset HEAD <file></file></td>
+<td style="text-align:left">放弃暂存（内容不变）</td>
 </tr>
 <tr>
 <td style="text-align:left">git rm <file></file></td>
@@ -555,12 +571,54 @@
 <td style="text-align:left">git diff</td>
 <td style="text-align:left">查看文件修改内容</td>
 </tr>
+<tr>
+<td style="text-align:left">git diff HEAD – <file></file></td>
+<td style="text-align:left">查看<file>与最新版本的差异</file></td>
+</tr>
 </tbody>
 </table>
 <blockquote>
 <p>git config命令的–global参数，表明这台机器上的所有Git仓库都会使用这个配置，也可以对某个仓库指定不同的用户名和邮箱地址</p>
 </blockquote>
-<h3 id="Git进阶"><a href="#Git进阶" class="headerlink" title="Git进阶"></a>Git进阶</h3><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<h3 id="Git进阶"><a href="#Git进阶" class="headerlink" title="Git进阶"></a>Git进阶</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">指令</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a>“</td>
+<td style="text-align:left">创建SSH key,~/.ssh目录下生成id_rsa和id_rsa.pub两个文件，公钥配置到服务端</td>
+</tr>
+<tr>
+<td style="text-align:left">ssh-add ~/.ssh/id_rsa</td>
+<td style="text-align:left">添加私秘钥，如果添加失败可以先执行命令$ eval `ssh-agent`, `是～键上的那个符号，然后再次添加私秘钥</td>
+</tr>
+<tr>
+<td style="text-align:left">ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></td>
+<td style="text-align:left">判断是否绑定成功</td>
+</tr>
+<tr>
+<td style="text-align:left">git remote add origin <a href="https://github.com/username/repositoryname.git" target="_blank" rel="noopener">https://github.com/username/repositoryname.git</a></td>
+<td style="text-align:left">关联远程仓库</td>
+</tr>
+<tr>
+<td style="text-align:left">git push -u origin master</td>
+<td style="text-align:left">推送到远程仓库，-u 表示第一次推送master分支的所有内容，此后，每次本地提交后，只要有必要，就可以使用命令$ git push origin master推送最新修改。</td>
+</tr>
+<tr>
+<td style="text-align:left">git clone <a href="https://github.com/usern/repositoryname.git" target="_blank" rel="noopener">https://github.com/usern/repositoryname.git</a></td>
+<td style="text-align:left">从远程克隆 </td>
+</tr>
+<tr>
+<td style="text-align:left">git config –global alias.st status</td>
+<td style="text-align:left">设置别名，以后st就表示status</td>
+</tr>
+</tbody>
+</table>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
 <li><a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git-Manual</a> </li>
 <li><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">Git-book:《Pro Git v2》</a></li>
 <li><a href="https://git-scm.com/videos" target="_blank" rel="noopener">Git-video</a></li>
