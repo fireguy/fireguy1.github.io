@@ -52,21 +52,30 @@ git add <file>|添加文件到仓库
 git commit -m <message>|提交
 git status|查看工作区状态
 git log [--pretty=oneline]|查看提交历史
-git reset --hard HEAD^|HEAD指向的版本是当前版本，回到上一版本
-git reset --hard HEAD^^|HEAD指向的版本是当前版本，回退上两个版本
-git reset --hard HEAD~50|HEAD指向的版本是当前版本，回退上指定版本数
+git reset --hard HEAD^|HEAD指向的版本是当前版本，回到上一版本（前提是没有推送到远程库）
+git reset --hard HEAD^^|HEAD指向的版本是当前版本，回退上两个版本（前提是没有推送到远程库）
+git reset --hard HEAD~50|HEAD指向的版本是当前版本，回退上指定版本数（前提是没有推送到远程库）
 git reflog|查看提交命令历史，可查看提交版本号(commit id/SHA1)
 git reset --hard <SHA1> | 回到未来指定版本<SHA1>
-git checkout -- <file>|丢弃工作区的修改
+git checkout -- <file>|丢弃工作区的修改,让这个文件回到最近一次git commit或git add时的状态
+git reset HEAD <file> | 放弃暂存（内容不变）
 git rm <file>| 删除文件，相当于先rm <file>再git add <file>
 git diff|查看文件修改内容
-
+git diff HEAD -- <file>|查看<file>与最新版本的差异
 
 >git config命令的--global参数，表明这台机器上的所有Git仓库都会使用这个配置，也可以对某个仓库指定不同的用户名和邮箱地址
 >
-
-
 ### Git进阶
+指令|说明
+:--|:--
+ssh-keygen -t rsa -C "youremail@example.com"|创建SSH key,~/.ssh目录下生成id_rsa和id_rsa.pub两个文件，公钥配置到服务端
+ssh-add ~/.ssh/id_rsa | 添加私秘钥，如果添加失败可以先执行命令$ eval \`ssh-agent\`, \`是～键上的那个符号，然后再次添加私秘钥
+ssh -T git@github.com | 判断是否绑定成功
+git remote add origin https://github.com/username/repositoryname.git | 关联远程仓库
+git push -u origin master| 推送到远程仓库，-u 表示第一次推送master分支的所有内容，此后，每次本地提交后，只要有必要，就可以使用命令$ git push origin master推送最新修改。
+git clone https://github.com/usern/repositoryname.git |从远程克隆 
+git config --global alias.st status | 设置别名，以后st就表示status
+
 
 # 参考
 - [Git-Manual](https://git-scm.com/doc) 
