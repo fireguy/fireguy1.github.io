@@ -22,16 +22,16 @@ git --version
 ### git
 - [Github-Git](https://github.com/git/git)
 - [Git下载地址](https://git-scm.com/download)
-![](/git/20190318081402340.png)
+![](https://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/git/20190318081402340.png?q-sign-algorithm=sha1&q-ak=AKIDWk4NETS4dp8YT5qLd7sAYcYVav8yJSYg&q-sign-time=1553258114;1553259914&q-key-time=1553258114;1553259914&q-header-list=&q-url-param-list=&q-signature=ddf940795789458c5b9069ed36395392d47104bb&x-cos-security-token=a4b65ea327a1281e87bab6f8b18d29104db9efde10001)
 ### git-GUI
 [git-GUI Clients](https://git-scm.com/downloads/guis/)
-![](/git/20190318083343938.png)
+![](https://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/git/20190318083343938.png?q-sign-algorithm=sha1&q-ak=AKIDuBSNmTh00k9ju3SvFLdFgofSgFdONZx2&q-sign-time=1553258139;1553259939&q-key-time=1553258139;1553259939&q-header-list=&q-url-param-list=&q-signature=5d2efc5158c34d995f0cd20b9e9c59a9c5bd94ec&x-cos-security-token=0c8c321761aa1fb826005cec11fbae11a711fac410001)
 
 ## 工作区、暂存区和版本库
 - 工作区：git init指令执行的目录
 - 版本库：工作区的隐藏目录.git
 - 暂存区: 版本库的stage（或index）
-![](/git/20190318100549699.png)
+![](https://fireguytop-1257361176.cos.ap-chongqing.myqcloud.com/git/20190318100549699.png?q-sign-algorithm=sha1&q-ak=AKIDSLMyBooYQoiPrd5h4riUhEGb3fReZ59P&q-sign-time=1553258177;1553259977&q-key-time=1553258177;1553259977&q-header-list=&q-url-param-list=&q-signature=e92dd3b74abbdb287d040477e956e2b833fe8ce7&x-cos-security-token=4e8ad10f64d9d074dffa4deace106d001df18a5e10001)
 
 将文件往版本库里添加时是分两步执行的:
   - 第一步是用`git add`把文件添加进去，实际上就是把文件修改添加到暂存区。
@@ -75,6 +75,17 @@ git remote add origin https://github.com/username/repositoryname.git | 关联远
 git push -u origin master| 推送到远程仓库，-u 表示第一次推送master分支的所有内容，此后，每次本地提交后，只要有必要，就可以使用命令$ git push origin master推送最新修改。
 git clone https://github.com/usern/repositoryname.git |从远程克隆 
 git config --global alias.st status | 设置别名，以后st就表示status
+git branch | 查看分支
+git branch <name> | 创建分支
+git checkout <name> | 切换分支
+git checkout -b <name> | 创建+切换分支
+git merge <name>| 合并分支到当前分支,当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+git merge --no-ff -m "description" <branchname> | 通常进行分支合并时，git会使用Fast forward模式，删除分支后，分支信息会丢失，可以使用--on-ff参数，禁用Fast forward，需要时加上一个-m参数把commit描述写进去。这样进行合并后的历史有分支，能看出来曾经做过合并。
+git branch -d <name> | 删除非当前分支
+git branch -D <name> | 强行删除分支，丢弃一个没有被合并过的分支
+git log --graph | 查看分支合并图
+
+
 
 
 # 参考
